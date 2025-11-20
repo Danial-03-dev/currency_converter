@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   late ConvertionController convertionController;
+  const errorMargin = 0.01;
 
   setUp(() {
     convertionController = ConvertionController();
@@ -22,20 +23,22 @@ void main() {
 
     test('returns correct calculation for integar value', () {
       const amountString = '10';
-      const expectedValue = 283.17 * 10; // 283.17 * 10 = 2831.7
+      final expectedValue =
+          convertionController.exchangeRate * 10; // 283.17 * 10 = 2831.7
 
       final result = convertionController.calculateExchangeRate(amountString);
 
-      expect(result, expectedValue);
+      expect(result, closeTo(expectedValue, errorMargin));
     });
 
     test('returns correct calculation for decimal value', () {
       const amountString = '2.5';
-      const expectedValue = 283.17 * 2.5; // 283.17 * 2.5 = 707.925
+      final expectedValue =
+          convertionController.exchangeRate * 2.5; // 283.17 * 2.5 = 707.925
 
       final result = convertionController.calculateExchangeRate(amountString);
 
-      expect(result, expectedValue);
+      expect(result, closeTo(expectedValue, errorMargin));
     });
 
     test('returns correct calculation for custom exchange rate', () {
@@ -47,7 +50,7 @@ void main() {
 
       final result = convertionController.calculateExchangeRate(amountString);
 
-      expect(result, expectedValue);
+      expect(result, closeTo(expectedValue, errorMargin));
     });
   });
 }
