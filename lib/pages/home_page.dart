@@ -1,3 +1,4 @@
+import 'package:currency_converter/classes/convertion_controller.dart';
 import 'package:currency_converter/widgets/convert_button.dart';
 import 'package:currency_converter/widgets/currency_input.dart';
 import 'package:currency_converter/widgets/currency_text_display.dart';
@@ -13,12 +14,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   double result = 0;
-  final exchangeRate = 284.17;
+  final convertionController = ConvertionController();
   final TextEditingController textEditingController = TextEditingController();
 
   void handleConvertion() {
     setState(() {
-      result = double.parse(textEditingController.text) * exchangeRate;
+      result = convertionController.calculateExchangeRate(
+        textEditingController.text,
+      );
     });
   }
 
