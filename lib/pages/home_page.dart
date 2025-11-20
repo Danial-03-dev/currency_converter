@@ -14,11 +14,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   double result = 0;
+  bool showError = false;
   final convertionController = ConvertionController();
   final TextEditingController textEditingController = TextEditingController();
 
   void handleConvertion() {
     setState(() {
+      showError = true;
       result = convertionController.calculateExchangeRate(
         textEditingController.text,
       );
@@ -44,7 +46,10 @@ class _HomePageState extends State<HomePage> {
             spacing: 16,
             children: [
               CurrencyTextDisplay(result: result),
-              CurrencyInput(controller: textEditingController),
+              CurrencyInput(
+                controller: textEditingController,
+                showError: showError,
+              ),
               ConvertButton(onPressed: handleConvertion),
             ],
           ),

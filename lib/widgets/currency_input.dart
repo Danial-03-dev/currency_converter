@@ -3,8 +3,13 @@ import 'package:flutter/services.dart';
 
 class CurrencyInput extends StatefulWidget {
   final TextEditingController controller;
+  final bool showError;
 
-  const CurrencyInput({super.key, required this.controller});
+  const CurrencyInput({
+    super.key,
+    required this.controller,
+    required this.showError,
+  });
 
   @override
   State<CurrencyInput> createState() => _CurrencyInputState();
@@ -42,7 +47,9 @@ class _CurrencyInputState extends State<CurrencyInput> {
         focusedErrorBorder: errorBorder,
 
         // 👇 Only show error if user has typed (touched)
-        errorText: _touched ? _validate(widget.controller.text) : null,
+        errorText: _touched || widget.showError
+            ? _validate(widget.controller.text)
+            : null,
       ),
 
       onChanged: (value) {
