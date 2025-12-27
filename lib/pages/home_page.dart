@@ -1,6 +1,6 @@
-import 'package:currency_converter/providers/currency_provider.dart';
-import 'package:currency_converter/widgets/currency_form.dart';
-import 'package:currency_converter/widgets/home_page_app_bar.dart';
+import 'package:pak_rupee_converter/providers/currency_provider.dart';
+import 'package:pak_rupee_converter/widgets/currency_form.dart';
+import 'package:pak_rupee_converter/widgets/home_page_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,4 +1,4 @@
-import 'package:currency_converter/providers/currency_provider.dart';
+import 'package:pak_rupee_converter/providers/currency_provider.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

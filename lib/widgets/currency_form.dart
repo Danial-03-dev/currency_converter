@@ -1,9 +1,9 @@
-import 'package:currency_converter/providers/currency_provider.dart';
-import 'package:currency_converter/widgets/convert_button.dart';
-import 'package:currency_converter/widgets/currency_input.dart';
-import 'package:currency_converter/widgets/currency_selector.dart';
-import 'package:currency_converter/widgets/currency_text_display.dart';
-import 'package:currency_converter/widgets/error_text.dart';
+import 'package:pak_rupee_converter/providers/currency_provider.dart';
+import 'package:pak_rupee_converter/widgets/convert_button.dart';
+import 'package:pak_rupee_converter/widgets/currency_input.dart';
+import 'package:pak_rupee_converter/widgets/currency_selector.dart';
+import 'package:pak_rupee_converter/widgets/currency_text_display.dart';
+import 'package:pak_rupee_converter/widgets/error_text.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:currency_converter/contants/contants.dart';
+import 'package:pak_rupee_converter/contants/contants.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 

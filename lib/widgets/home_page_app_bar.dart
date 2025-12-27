@@ -7,7 +7,7 @@ class HomePageAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext build) {
     return AppBar(
       title: const Text(
-        'Currency Converter',
+        'Pak Rupee Converter',
         style: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.bold,
