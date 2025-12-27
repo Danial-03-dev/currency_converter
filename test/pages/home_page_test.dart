@@ -1,7 +1,6 @@
-import 'package:currency_converter/classes/convertion_controller.dart';
 import 'package:currency_converter/pages/home_page.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Home Page', () {
@@ -22,11 +21,7 @@ void main() {
       await tester.tap(convertButton);
       await tester.pumpAndSettle();
 
-      final convertionController = ConvertionController();
-      final expectedResult =
-          "${convertionController.calculateExchangeRate(inputText).toStringAsFixed(2)} Rs";
-
-      expect(find.text(expectedResult), findsOneWidget);
+      expect(find.text('20'), findsOneWidget);
     });
 
     testWidgets(

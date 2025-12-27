@@ -6,15 +6,15 @@ class HomePageAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext build) {
     return AppBar(
-      title: Text(
+      title: const Text(
         'Currency Converter',
         style: TextStyle(
-          fontSize: 22,
+          fontSize: 24,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),
       ),
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.black87,
     );
   }
 
