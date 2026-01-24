@@ -18,6 +18,13 @@ This project was created as a **portfolio/demo app** to showcase clean UI, API i
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Live Preview (GitHub Pages):**  
+👉 [Live Preview Link](https://danial-03-dev.github.io/currency_converter/)
+
+---
+
 ## 💱 Supported Currencies
 
 The app currently supports conversion from the following currencies **to Pakistani Rupee (PKR)**:
@@ -44,13 +51,6 @@ The app currently supports conversion from the following currencies **to Pakista
 - JOD — Jordanian Dinar  
 
 > 🔒 Conversion direction is **always to PKR** by design.
-
----
-
-## 🚀 Live Demo
-
-🔗 **Live Preview (GitHub Pages):**  
-👉 _Add your GitHub Pages link here_
 
 ---
 
